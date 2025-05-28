@@ -9,6 +9,9 @@ int main() {
     float pib1, pib2;
     int pontosturisticos1, pontosturisticos2;
 
+    // Acima defini todas as variáveis utilizadas para as cartas 1 e 2.
+    //Abaixo iniciei printf/scanf para coletar e mostrar os dados da carta 1.
+
     printf("Insira os dados da sua carta 1 abaixo! \n");
     printf("De A à H, qual letra representa o estado da sua carta? \n");
     scanf("%c", &estado1);
@@ -40,6 +43,7 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontosturisticos1);
 
+    // Acima finalizei a carta 1 e abaixo iniciei a carta 2.
 
     printf("Agora insira os dados da sua carta 2 abaixo! \n");
     printf("De A à H, qual letra representa o estado da sua carta? \n");
