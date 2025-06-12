@@ -8,6 +8,8 @@ int main() {
     float area1, area2;
     float pib1, pib2;
     int pontosturisticos1, pontosturisticos2;
+    float densidadepopulacional1, densidadepopulacional2;
+    float pibpercapita1, pibpercapita2;
 
     // Acima defini todas as variáveis utilizadas para as cartas 1 e 2.
     //Abaixo iniciei printf/scanf para coletar e mostrar os dados da carta 1.
@@ -43,6 +45,14 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontosturisticos1);
 
+    /* Abaixo foi feito o a parte intermediária do desafio.
+    Calculei a densidade populacional e o pib per capita da carta 1. */
+    densidadepopulacional1 = (populacao1 / area1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadepopulacional1);
+
+    pibpercapita1 = (pib1 * 1000000000 / populacao1);
+    printf("PIB per Capita: %.2f reais\n", pibpercapita1);
+
     // Acima finalizei a carta 1 e abaixo iniciei a carta 2.
 
     printf("Agora insira os dados da sua carta 2 abaixo! \n");
@@ -76,6 +86,14 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosturisticos2);
+
+    /* Abaixo foi feito o a parte intermediária do desafio.
+    Calculei a densidade populacional e o pib per capita da carta 2. */
+    densidadepopulacional2 = (populacao2 / area2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadepopulacional2);
+
+    pibpercapita2 = (pib2 * 1000000000 / populacao2);
+    printf("PIB per Capita: %.2f reais\n", pibpercapita2);
 
     return 0;
 }
